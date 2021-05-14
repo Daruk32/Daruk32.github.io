@@ -8,11 +8,14 @@
 		<title>Nos gammes</title>
 		<link rel="stylesheet" href="css\attable.css">
 		<link rel="stylesheet" href="css\footer.css">
-		<script src="js\tableau.js" type="text/javascript"></script>
+
+		<script type="module" src="js\slideshow.js"></script>
+
+		<script type="module" src="js/gen_dyna.js"></script>
 		
 	</head>
 	
-	<body onload="chargement()">
+	<body onload="chargement(), bandeau(), create_slideshow(), showSlides()">
 		
 		<header>
 
@@ -46,44 +49,18 @@
 		
 		<section id="main">
 			
-			<div id="nouveau" class="tableau">
+			<div id="bandeau">
+				<ul id="bande"></ul>
+			</div>
 
-				<h2>Les offres de la semaine et nouveautés</h2>
 
-				<div class="slideshow-container">
+			<div class="carrousel">
 
-					<div class="mySlides fade">
-					  <div class="numbertext"></div>
-					  <img src="images\boisson1.png" class="slide1">
-					  <div class="text">Nos sodas</div>
-					</div>
+				<h3>Les offres de la semaine et nouveautés</h3>
+				
+				<!--Div de génération du Slidewhow / Voir slideshow.js-->
+				<div id="slideshow-container"></div>
 
-					<div class="mySlides fade">
-					  <div class="numbertext"></div>
-					  <img src="images\chips1.png" class="slide1">
-					  <div class="text">Nos chips Tortilla</div>
-					</div>
-
-					<div class="mySlides fade">
-					  <div class="numbertext"></div>
-					  <img src="images\bonbons1.png" class="slide1">
-					  <div class="text">Nos sucreries</div>
-					</div>
-
-					<div class="mySlides fade">
-					  <div class="numbertext"></div>
-					  <img src="images\hygiene1.png" class="slide1">
-					  <div class="text">Nos produits d'hygiène</div>
-					</div>
-
-					<div class="mySlides fade">
-					  <div class="numbertext"></div>
-					  <img src="images\cafe3.png" class="slide1">
-					  <div class="text">Nos cafés</div>
-					</div>
-				</div>
-
-				<br>
 
 				<div style="text-align:center">
 				  <span class="dot" onclick="currentSlide(1)"></span> 
@@ -98,39 +75,20 @@
 
 			<script src="js\slideshow.js" type="text/javascript"></script>
 
-			<div id="bandeau">
-				<ul id="bande">
-					<li><a onclick="changeCategorie(1)">PROMOTION</a></li>
-					<li><a onclick="changeCategorie(2)">Gâteau</a></li>
-					<li><a onclick="changeCategorie(3)">Légumes secs</a></li>
-					<li><a onclick="changeCategorie(4)">Fruits secs</a></li>
-					<li><a onclick="changeCategorie(5)">Thé</a></li>
-					<li><a onclick="changeCategorie(6)">Bonbons</a></li>
-					<li><a onclick="changeCategorie(7)">Conserves</a></li>
-					<li><a onclick="changeCategorie(8)">Farines</a></li>
-					<br>
-					<li><a onclick="changeCategorie(9)">Boisson</a></li>
-					<li><a onclick="changeCategorie(10)">Chips</a></li>
-					<li><a onclick="changeCategorie(11)">Café</a></li>
-					<li><a onclick="changeCategorie(12)">Chocolat</a></li>
-					<li><a onclick="changeCategorie(13)">Hygiène</a></li>
-					<li><a onclick="changeCategorie(14)">Epicerie sucrée</a></li>
-					<li><a onclick="changeCategorie(15)">Epicerie salée</a></li>
-					<li><a onclick="changeCategorie(16)">Epices</a></li>
-				</ul>
-			</div>
-
+			<!--Div d'affichage du produit choisi depuis la liste générée ci-dessous / Voir tableau.js-->
 			<div id="fiche_produit"></div>
 
+			<!--Div de génération des produits de la catégorie choisie / Voir tableau.js-->
 			<div id="descriptif_cat"></div>
 
-			<script src="js\tableau.js" type="text/javascript"></script>
 
 			<div id="info_categorie">
 				Venez en magasin car il y a des arrivées fréquentes, tous les produits et prix ne sont pas visibles sur notre site, images non contractuelles !
 			</div>
 			
 		</section>
+
+
 	
 		<footer>
 

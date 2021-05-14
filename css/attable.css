@@ -80,12 +80,10 @@ header div {
 
 /* ------------------------------------------La section principale------------------------------------------------------ */
 #main {
-	margin-left: 3%;
-	margin-right: 3%;
+	margin: 0 3% 0 3%;
 	background-color:white;
 	z-index:1;
-	padding-top: 2%;
-	padding-bottom: 2%;
+	padding: 1% 0 2% 0;
 }
 
 hr {
@@ -95,19 +93,17 @@ hr {
 	margin: 30px 30px;
 }
 
-h2 {
+h3 {
 	text-align: center;
 }
 
 
 /* ------------------------------------------Page d'accueil - Partie Nouveautés------------------------------------------------------ */
-.tableau {
-	margin-right: 5%;
-	margin-left: 5%;
+.carrousel,
+.liste_categorie {
+	margin: 5px 5% 20px 5%;
 	border: 2px solid red;
 	border-radius: 20px;
-	margin-top:20px;
-	margin-bottom:20px;
 }
 
 /* Les 16 catégories*/
@@ -115,13 +111,16 @@ h2 {
 	width: 100%;
 	padding-top: 2%;
 	padding-bottom: 2%;
+	text-align: center;
 }
 .categs {
-	width:25%;
+	width:24%;
 	padding: 10px;
 	text-align: center;
 	border: 1px solid red;
 	border-radius: 5px;
+	display:inline-block;
+	margin: 3px;
 }
 .categs img {
 	height:200px;
@@ -153,7 +152,6 @@ h2 {
 /* La bande centrale de produits */
 #bandeau {
 	background-color:grey;
-	position: relative;
 	height:100%;
 	width:100%;
 	left:0px;
@@ -162,6 +160,8 @@ h2 {
 	bottom:auto;
 	z-index:2;
 	border: 2px solid red;
+	top: 0;
+	position: sticky;
 }
 #bande {
 	padding:0;
@@ -187,6 +187,7 @@ h2 {
 	background-color: white;
 	font-weight: bold;
 	border:2px solid red;
+	cursor: pointer;
 }
 
 /* La présentation des différents produits de la catégorie */
@@ -210,6 +211,8 @@ h2 {
 	margin : 10px 30px 10px 30px;
 	padding:5px 5px 10px 5px;
 	border:3px solid red;
+	width : 400px;
+	height : 300px;
 }
 
 .produit {
@@ -238,19 +241,27 @@ h2 {
 /* La fiche produit */
 #fiche_produit {
 	border: 2px solid red;
-	padding: 2% 0px 2% 0px;
+	padding: 2% 0 2% 0;
 	margin: 2% auto 2% auto;
 	width: 60%;
+	height:auto;
 }
 
 /* La photo */
 #description_produit {
 	float: left;
 	padding: 0px 5% 0px 5%;
+	position:relative;
 }
 
 #description_produit img {
 	height: 200px;
+}
+#description_produit img:hover {
+	height: 390px;
+	width:auto;
+	transition: width 1s, height 1s;
+	bottom:auto;
 }
 
 /* Le texte */
@@ -406,8 +417,9 @@ h2 {
 	border: 1px solid black;
 }
 
-#devanture .slideshow-container .mySlides{
+#devanture #slideshow-container .mySlides{
 	height:300px;
+	text-align: center;
 }
 
 #devanture .dot {
@@ -425,16 +437,17 @@ h2 {
 
 /* ------------------------------------------------------------Le slideshow------------------------------------------------------ */
 * {box-sizing: border-box;}
+
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  text-align: center;
+#slideshow-container {
+  	max-width: 1000px;
+  	position: relative;
+  	margin: auto;
+  	text-align: center;
 }
 
 /* Caption text */
@@ -456,16 +469,13 @@ img {vertical-align: middle;}
 .dot {
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 10px 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active {
-  background-color: #717171;
-}
 
 /* Fading animation */
 .fade {
@@ -491,13 +501,10 @@ img {vertical-align: middle;}
 }
 
 .slide1 {
-	height:450px;
+	height:200px;
 	width:auto;
 	border:1px solid black;
 }
-
-
-
 
 
 /* ------------------------------------------------------------Page Panier------------------------------------------------------ */

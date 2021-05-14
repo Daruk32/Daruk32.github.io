@@ -1,3 +1,6 @@
+//Ici, il y a tout à comprendre pour préparer le fonctionnement du panier !
+
+
 // variables pour stocker le nombre d'articles et leurs noms
 var quantite_articles;
 var nom_articles;

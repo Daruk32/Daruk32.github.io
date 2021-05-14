@@ -8,12 +8,17 @@
 		<title>Accueil</title>
 		<link rel="stylesheet" href="css\attable.css">
 		<link rel="stylesheet" href="css\footer.css">
+
 		<script src="js\valid.js" type="text/javascript"></script>
-		<script src="js\tableau.js" type="text/javascript"></script>
+
+		<script type="module" src="js/slideshow.js"></script>
+
+
+		<script type="module" src="js/gen_dyna.js"></script>
 
 	</head>
 	
-	<body>
+	<body onload="liste_categorie(), create_slideshow(), showSlides()">
 		
 		<header>
 
@@ -24,7 +29,7 @@
 			</div>
 
 			<div id="titre_page">
-				Passez ATTABLE et faites des économies
+				Passez ATTABLE et faites des économies !
 			</div>
 
 			<div id="panier">
@@ -47,44 +52,13 @@
 		
 		<section id="main">
 			
-			<div id="nouveau" class="tableau">
+			<div class="carrousel">
 
-				<h2>Les offres de la semaine et nouveautés</h2>
+				<h3>Les offres de la semaine et nouveautés</h3>
+				
+				<!--Div de génération du Slidewhow / Voir slideshow.js-->
+				<div id="slideshow-container"></div>
 
-				<div class="slideshow-container">
-
-					<div class="mySlides fade">
-					  <div class="numbertext"></div>
-					  <img src="images\boisson1.png" class="slide1">
-					  <div class="text">Nos sodas</div>
-					</div>
-
-					<div class="mySlides fade">
-					  <div class="numbertext"></div>
-					  <img src="images\chips1.png" class="slide1">
-					  <div class="text">Nos chips Tortilla</div>
-					</div>
-
-					<div class="mySlides fade">
-					  <div class="numbertext"></div>
-					  <img src="images\bonbons1.png" class="slide1">
-					  <div class="text">Nos sucreries</div>
-					</div>
-
-					<div class="mySlides fade">
-					  <div class="numbertext"></div>
-					  <img src="images\hygiene1.png" class="slide1">
-					  <div class="text">Nos produits d'hygiène</div>
-					</div>
-
-					<div class="mySlides fade">
-					  <div class="numbertext"></div>
-					  <img src="images\cafe3.png" class="slide1">
-					  <div class="text">Nos cafés</div>
-					</div>
-				</div>
-
-				<br>
 
 				<div style="text-align:center">
 				  <span class="dot" onclick="currentSlide(1)"></span> 
@@ -96,128 +70,20 @@
 
 			</div>
 
+
 			<script src="js\slideshow.js" type="text/javascript"></script>
+		
 
-			<hr>
+			<div id="cates" class="liste_categorie">
 
-			<div id="cates" class="tableau">
-				<h2>Les catégories de produit que l'on s'arrache</h2>
+				<h3>Les catégories de produit que l'on s'arrache</h3>
 
-				<table id="tableau_image_categorie">
+				<div id="tableau_image_categorie"></div>
 
-					<tr>
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=1'">
-								<img src="images\promo-forfait.jpg" alt="Promotion" class="cats">
-							</a>
-							<div class="nomcats">Promotions</div>
-						</td>
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=9'">
-								<img src="images\boisson1.png" alt="Boisson" class="cats">
-							</a>
-							<div class="nomcats">Boissons</div>							
-						</td>					
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=11'">
-								<img src="images\cafe1.png" alt="Café" class="cats">
-							</a>
-							<div class="nomcats">Cafés</div>
-						</td>
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=12'">
-								<img src="images\chocolat1.png" alt="Chocolat" class="cats">
-							</a>
-							<div class="nomcats">Chocolats</div>
-						</td>
-					</tr>
-
-					<tr>
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=10'">
-								<img src="images\chips1.png" alt="Chips" class="cats">
-							</a>
-							<div class="nomcats">Chips</div>
-						</td>
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=6'">
-								<img src="images\bonbons1.png" alt="Bonbons" class="cats">
-							</a>
-							<div class="nomcats">Bonbons</div>
-						</td>					
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=2'">
-								<img src="images\gateau1.png" alt="Gâteau" class="cats">
-							</a>
-							<div class="nomcats">Gâteaux</div>
-						</td>
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=16'">
-								<img src="images\epices1.png" alt="Epices" class="cats">
-							</a>
-							<div class="nomcats">&Eacute;pices</div>
-						</td>
-					</tr>
-
-					<tr>
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=13'">
-								<img src="images\hygiene1.png" alt="Hygiène" class="cats">
-							</a>
-							<div class="nomcats">Hygiène / Maison</div>
-						</td>
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=4'">
-								<img src="images\fruitsecs1.png" alt="Fruits secs" class="cats">
-							</a>
-							<div class="nomcats">Fruits secs</div>
-						</td>					
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=3'">
-								<img src="images\legumesecs1.png" alt="Légumes secs" class="cats">
-							</a>
-							<div class="nomcats">Légumes secs</div>
-						</td>
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=5'">
-								<img src="images\the1.png" alt="Thé" class="cats">
-							</a>
-							<div class="nomcats">Thés</div>
-						</td>
-					</tr>
-
-					<tr>
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=14'">
-								<img src="images\epiceriesuc1.png" alt="Epicerie sucrée" class="cats">
-							</a>
-							<div class="nomcats">&Eacute;picerie sucrée</div>
-						</td>
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=7'">
-								<img src="images\conserves1.png" alt="Conserves" class="cats">
-							</a>
-							<div class="nomcats">Conserves</div>
-						</td>					
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=8'">
-								<img src="images\farines1.png" alt="Farines" class="cats">
-							</a>
-							<div class="nomcats">Farines</div>
-						</td>
-						<td class="categs">
-							<a onClick="window.location.href='categorie.html?categorie=15'">
-								<img src="images\epiceriesal1.png" alt="Epicerie salée" class="cats">
-							</a>
-							<div class="nomcats">&Eacute;picerie salée</div>
-						</td>
-					</tr>
-
-				</table>
 			</div>
 
-			<script src="js\tableau.js" type="text/javascript"></script>
 
+			
 		</section>
 	
 		<footer>
