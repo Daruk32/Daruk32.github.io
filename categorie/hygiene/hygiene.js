@@ -1,5 +1,5 @@
-//Ici, la liste de vos produits - CHIPS
-export var tab_chips = new Array();
+//Ici, la liste de vos produits - HYGIENE
+export var tab_hygiene = new Array();
 
 
 
@@ -17,42 +17,42 @@ export var tab_chips = new Array();
 
 
 //Ajouter une ligne en copiant/collant et renseignant les informations relatives à ce nouveau produit
-var chips1 = {
-    url: 'categorie/chips/chips1.png',
-    libelle: 'Variétés de chips',
-    prix: 0.50,
+var hygiene1 = {
+    url: 'categorie/hygiene/hygiene1.png',
+    libelle: 'Notre lessive',
+    prix: 3,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_chips.push(chips1);
+tab_hygiene.push(hygiene1);
 
-var chips2 = {
-    url: 'categorie/chips/chips2.png',
-    libelle: 'Curly',
-    prix: 0.50,
+var hygiene2 = {
+    url: 'categorie/hygiene/hygiene2.png',
+    libelle: 'Nos produits pour le corps',
+    prix: 2,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_chips.push(chips2);
+tab_hygiene.push(hygiene2);
 
-var chips3 = {
-    url: 'categorie/chips/chips3.png',
-    libelle: 'Popped',
-    prix: 0.50,
+var hygiene3 = {
+    url: 'categorie/hygiene/hygiene3.png',
+    libelle: 'Notre lessive',
+    prix: 3,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_chips.push(chips3);
+tab_hygiene.push(hygiene3);
 
-var chips4 = {
-    url: 'categorie/chips/chips4.png',
-    libelle: 'Variétés de chips', prix:
-    0.50,
+var hygiene4 = {
+    url: 'categorie/hygiene/hygiene4.png',
+    libelle: 'Nos produits pour le corps',
+    prix: 2,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_chips.push(chips4);
+tab_hygiene.push(hygiene4);
 
-var chips5 = {
-    url: 'categorie/chips/chips5.png',
-    libelle: 'Curly',
-    prix: 0.50,
+var hygiene5 = {
+    url: 'categorie/hygiene/hygiene5.png',
+    libelle: 'Notre lessive',
+    prix: 3,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_chips.push(chips5);
+tab_hygiene.push(hygiene5);

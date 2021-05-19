@@ -1,5 +1,5 @@
-//Ici, la liste de vos produits - CHIPS
-export var tab_chips = new Array();
+//Ici, la liste de vos produits - CAFES
+export var tab_cafe = new Array();
 
 
 
@@ -17,42 +17,42 @@ export var tab_chips = new Array();
 
 
 //Ajouter une ligne en copiant/collant et renseignant les informations relatives à ce nouveau produit
-var chips1 = {
-    url: 'categorie/chips/chips1.png',
-    libelle: 'Variétés de chips',
-    prix: 0.50,
+var cafe1 = {
+    url: 'categorie/cafes/cafe1.png',
+    libelle: 'Une multitude de de cafés',
+    prix: 2.50,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_chips.push(chips1);
+tab_cafe.push(cafe1);
 
-var chips2 = {
-    url: 'categorie/chips/chips2.png',
-    libelle: 'Curly',
-    prix: 0.50,
+var cafe2 = {
+    url: 'categorie/cafes/cafe2.png',
+    libelle: 'Café carte noir et autre',
+    prix: 2,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_chips.push(chips2);
+tab_cafe.push(cafe2);
 
-var chips3 = {
-    url: 'categorie/chips/chips3.png',
-    libelle: 'Popped',
-    prix: 0.50,
+var cafe3 = {
+    url: 'categorie/cafes/cafe3.png',
+    libelle: 'Café HOUSE',
+    prix: 1,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_chips.push(chips3);
+tab_cafe.push(cafe3);
 
-var chips4 = {
-    url: 'categorie/chips/chips4.png',
-    libelle: 'Variétés de chips', prix:
-    0.50,
+var cafe4 = {
+    url: 'categorie/cafes/cafe4.png',
+    libelle: 'Une multitude de de cafés',
+    prix: 2.50,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_chips.push(chips4);
+tab_cafe.push(cafe4);
 
-var chips5 = {
-    url: 'categorie/chips/chips5.png',
-    libelle: 'Curly',
-    prix: 0.50,
+var cafe5 = {
+    url: 'categorie/cafes/cafe5.png',
+    libelle: 'Café carte noir et autre',
+    prix: 2,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_chips.push(chips5);
+tab_cafe.push(cafe5);
