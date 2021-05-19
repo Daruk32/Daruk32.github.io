@@ -9,13 +9,13 @@
 		<link rel="stylesheet" href="css\attable.css">
 		<link rel="stylesheet" href="css\footer.css">
 
-		<script type="module" src="js\slideshow.js"></script>
-
 		<script type="module" src="js/gen_dyna.js"></script>
+
+		<script src="js/panier.js" type="text/javascript"></script>
 		
 	</head>
 	
-	<body onload="chargement(), bandeau(), create_slideshow(), showSlides()">
+	<body onload="chargement(), bandeau()">
 		
 		<header>
 
@@ -54,30 +54,14 @@
 			</div>
 
 
-			<div class="carrousel">
+			<!--span pour l'ancrage à la fiche produit-->
+			<span id="ancre1"></span>
 
-				<h3>Les offres de la semaine et nouveautés</h3>
-				
-				<!--Div de génération du Slidewhow / Voir slideshow.js-->
-				<div id="slideshow-container"></div>
-
-
-				<div style="text-align:center">
-				  <span class="dot" onclick="currentSlide(1)"></span> 
-				  <span class="dot" onclick="currentSlide(2)"></span> 
-				  <span class="dot" onclick="currentSlide(3)"></span> 
-				  <span class="dot" onclick="currentSlide(4)"></span> 
-				  <span class="dot" onclick="currentSlide(5)"></span> 
-				</div>
-
-			</div>
-
-
-			<script src="js\slideshow.js" type="text/javascript"></script>
 
 			<!--Div d'affichage du produit choisi depuis la liste générée ci-dessous / Voir tableau.js-->
 			<div id="fiche_produit"></div>
 
+			
 			<!--Div de génération des produits de la catégorie choisie / Voir tableau.js-->
 			<div id="descriptif_cat"></div>
 
@@ -86,6 +70,8 @@
 				Venez en magasin car il y a des arrivées fréquentes, tous les produits et prix ne sont pas visibles sur notre site, images non contractuelles !
 			</div>
 			
+			<script src="js/panier.js" type="text/javascript"></script>
+		
 		</section>
 
 

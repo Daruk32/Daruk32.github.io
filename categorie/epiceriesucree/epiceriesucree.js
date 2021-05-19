@@ -1,5 +1,5 @@
-//Ici, on a la liste de vos produits - BOISSONS
-export var tab_boisson = new Array();
+//Ici, la liste de vos produits - EPICERIE SUCREE
+export var tab_epiceriesuc = new Array();
 
 
 
@@ -17,42 +17,42 @@ export var tab_boisson = new Array();
 
 
 //Ajouter une ligne en copiant/collant et renseignant les informations relatives à ce nouveau produit
-var boisson1 = { 
-    url: 'categorie/boissons/boisson1.png',
-    libelle: 'Fanta, Perrier et Sanpellegrino',
+var epiceriesuc1 = {
+    url: 'categorie/epiceriesucree/epiceriesuc1.png',
+    libelle: 'Epicerie sucrée',
     prix: 1,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_boisson.push(boisson1);
+tab_epiceriesuc.push(epiceriesuc1);
 
-var boisson2 = {
-    url: 'categorie/boissons/boisson2.png',
-    libelle: 'Jus pomme orange et boissons gazeuses',
+var epiceriesuc2 = {
+    url: 'categorie/epiceriesucree/epiceriesuc2.png',
+    libelle: 'Milka et Bounty',
     prix: 1,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_boisson.push(boisson2);
+tab_epiceriesuc.push(epiceriesuc2);
 
-var boisson3 = {
-    url: 'categorie/boissons/boisson3.png',
-    libelle: 'Fanta, Perrier et Sanpellegrino',
-    prix: 1,
+var epiceriesuc3 = {
+    url: 'categorie/epiceriesucree/epiceriesuc3.png',
+    libelle: 'Madeleines',
+    prix: 0.20,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_boisson.push(boisson3);
+tab_epiceriesuc.push(epiceriesuc3);
 
-var boisson4 = {
-    url: 'categorie/boissons/boisson4.png',
-    libelle: 'Jus pomme orange et boissons gazeuses',
-    prix: 1,
+var epiceriesuc4 = {
+    url: 'categorie/epiceriesucree/epiceriesuc4.png',
+    libelle: 'Confiture',
+    prix: 3,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_boisson.push(boisson4);
+tab_epiceriesuc.push(epiceriesuc4);
 
-var boisson5 = {
-    url: 'categorie/boissons/boisson5.png',
-    libelle: 'Fanta, Perrier et Sanpellegrino',
-    prix: 1,
+var epiceriesuc5 = {
+    url: 'categorie/epiceriesucree/epiceriesuc5.png',
+    libelle: 'Miel',
+    prix: 3,
     texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
-tab_boisson.push(boisson5);
+tab_epiceriesuc.push(epiceriesuc5);
