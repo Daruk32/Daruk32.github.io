@@ -19,10 +19,10 @@ header div {
 
 /* Le logo */
 #logo {
-	width:120px;
+	width:150px;
 	position:relative;
 	float:left;
-	margin: 20 20 0 0;
+	margin-top: 8px;
 }
 #lelogo {
 	width: 100%;
@@ -32,7 +32,7 @@ header div {
 #titre_page {
 	position:relative;
 	float:left;
-	left:10%;
+	left:2%;
 	color:#d8284c;
 	font-size:50px;
 	font-family:Brush Script MT, Brush Script Std, cursive;
@@ -43,13 +43,13 @@ header div {
 #authentification {
 	position:relative;
 	float:right;
-	width:54px;
-	margin: 0 0 20 0;
-	top : 11px;
+	width:80px;
+	margin: 0px 0px 20px 0px;
+	top:5px;
 }
 
 #lesids {
-	width: 100%;
+	width: 71%;
 }
 
 
@@ -57,13 +57,40 @@ header div {
 #panier {
 	position:relative;
 	float:right;
-	width:60px;
-	margin: 0 0 5 0;
-	top:9px;
+	width:80px;
+	margin: 0px 0px 5px 0px;
+	bottom:18px;
+	text-align: center;
+	text-decoration : none;
+
 }
 #lepanier {
-	width: 100%;	
+	width: 80%;
+	position:relative;
+	z-index: 3;
 }
+#total_articles {
+	position:relative;
+	top: 25px;
+	z-index: 4;
+	font-weight:bold;
+	color : white;	
+}
+header a {
+	text-decoration : none;
+}
+#total_commande {
+	position:relative;
+	z-index: 4;
+	bottom: 17px;
+	font-weight:bold;
+	background: rgba(255, 255, 255, 0.5);
+	padding : 0px 5px 0px 5px;
+	border-radius: 10px;
+	color:black;
+}
+
+
 
 /* La barre de recherche */
 #recherche {
@@ -84,6 +111,7 @@ header div {
 	background-color:white;
 	z-index:1;
 	padding: 1% 0 2% 0;
+	text-align: center;
 }
 
 hr {
@@ -212,7 +240,7 @@ h3 {
 	padding:5px 5px 10px 5px;
 	border:3px solid red;
 	width : 400px;
-	height : 350px;
+	height : 340px;
 }
 
 .produit {
@@ -237,48 +265,91 @@ h3 {
 	text-align: center;
 }
 
-/*Zone Prix et bouton ajout/retrait quantité*/
+#descriptif_prix {
+	position : relative;
+	float : left;
+	font-size: 14px;
+	margin-left: 10%;
+}
+
+#modul_quantity {
+	position : relative;
+	float : right;
+	margin-right: 10%;
+}
+
 .affich_valeur {
 	width: 40px;
+	text-align: center;
+	height:35px;
+	border:none;
+	vertical-align: middle;
+	background: rgba(0, 0, 0, 0);
+	color:black;
+	font-weight:bold;
+	font-size: 20px;
+}
+
+.affich_valeur, .bmoins {
+	visibility: hidden;
+}
+
+.bplus {
+	visibility: visible;
+}
+
+
+.add-to-cart {
+	height: 35px;
+	width: 35px;
+	background-color: green;
+	color:white;
+	font-weight:bold;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+	vertical-align: middle;
+
 }
 
 
 
 
-/*-----------La fiche produit----------*/
+
+
+/*---------------La fiche produit--------------*/
 #fiche_produit {
 	display:none;
+	width: 50%;
+	height: 50%;
 	border: 2px solid red;
-	padding: 2% 0 2% 0;
-	margin: 2% auto 2% auto;
-	width: 60%;
-	height:auto;
+	padding: 10px;
+	margin: 20px;
 }
 
 /* La photo */
 #description_produit {
+	width: 50%;
+	display : block ;
 	float: left;
-	padding: 0px 5% 0px 5%;
-	position:relative;
 }
 
 #description_produit img {
-	height: 200px;
+	width: 100%;
+	border: none;
 }
-#description_produit img:hover {
-	height: 390px;
-	width:auto;
-	transition: width 1s, height 1s;
-	bottom:auto;
-}
+
 
 /* Le texte */
 #description_produit2 {
-	padding: 0px 5% 0px 5%;
+	width: 40%;
+	display : block;
+	float: right;
 }
 
 #description_produit2 p{
 	margin-bottom: 6%;
+	text-align: left;
 }
 
 #produit_action {
@@ -286,7 +357,7 @@ h3 {
 }
 
 #id_prix_produit {
-	margin-right: 60px;
+	text-align: left;
 }
 
 #produit_action input {
@@ -294,9 +365,14 @@ h3 {
 }
 
 #produit_action button {
-	float:right;
+	margin-top: 8%;
 }
 
+#produit_action #modul_quantity {
+	text-align: center;
+	margin-top: 20px;
+	margin-right: 37px;
+}
 
 /* Le champ de texte en bas de la page Catégorie */
 #info_categorie {
@@ -308,7 +384,7 @@ h3 {
 #ancre1{
 	display: block; 
 	height: 100px;
-	margin-top: -100px;
+	margin: -100px 0 20px 0;
 	visibility: hidden;
 }
 
@@ -345,7 +421,7 @@ h3 {
 #formu label {
 	display: inline-block;
 	font-size:16px;
-	text-align:middle;
+	text-align: center;
 	width:520px;
 	vertical-align:middle;
 	margin-bottom: 10px;
@@ -417,6 +493,47 @@ h3 {
 	cursor: pointer;
 	color:black;
 }
+
+
+
+
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+	display:none;
+	background: #f1f1f1;
+	color: #000;
+	position: relative;
+	padding: 20px;
+	margin-top: 10px;
+  }
+  
+  #message p {
+	padding: 10px 35px;
+	font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+	color: green;
+  }
+  
+  .valid:before {
+	position: relative;
+	left: -35px;
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+	color: red;
+  }
+  
+  .invalid:before {
+	position: relative;
+	left: -35px;
+  }
+
+
 
 
 
@@ -534,7 +651,7 @@ img {vertical-align: middle;}
 	position:relative;
 	float:right;
 	width:25px;
-	margin: 0 0 5 0;
+	margin: 0px 0px 5px 0px;
 	top:2px;
 }
 
@@ -553,18 +670,82 @@ padding:10px;
 	margin-left: 11%;
 }
 
-#div_panier {
-	height : 200px;
-	overflow-y: auto;
-	margin: 5%;
+/* Style du tableau générée dynamiquement */
+.table {
+	width : 90%;
+	margin : auto;
+	padding : 5px;
+	border : 4px solid red;
+	text-align: center;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+thead th:nth-child(1) {
+	width: 20%;
+}
+  thead th:nth-child(2) {
+	width: 30%;
+}
+  thead th:nth-child(3) {
+	width: 20%;
+}
+  thead th:nth-child(4) {
+	width: 20%;
+}
+thead th:nth-child(54) {
+	width: 10%;
 }
 
-#commande {
-	border : 2px solid red;
+.table thead, .table tbody tr {
+	border : 1px solid black;
+}
+.table td {
+	padding : 5px 0px 5px 0px;
 }
 
-#tab_panier td {
-	border-bottom: 1px solid red;
+.table img {
+	height : 150px;
+	width : auto;
+	border-radius: 10px;
+	border : 1px solid black;
+}
+
+#trashcan {
+	width : 50%;
+	height :auto;
+	border: none;
+	cursor: pointer;
+}
+
+#totalsomme {
+	width : 10%;
+	margin-left:80%;
+	padding: 5px;
+	background-color: red;
+	border-radius: 5px;
+	font-weight:bold;
+}
+
+#confirm-command {
+	width :5%;
+	margin : auto;
+	cursor:pointer;
+	text-decoration: none;
+}
+#confirm-command button{
+	background-color: green;
+	color:white;
+	font-weight:bold;
+	font-size: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+	vertical-align: middle;
+	cursor:pointer;
+	text-decoration: none;
+}
+#confirm-command button a, #confirm-command button a:hover {
+	text-decoration: none;
+	color:white;
 }
 
 
@@ -592,8 +773,4 @@ padding:10px;
 	width:150px;
 }
 
-
-
-
-
-
+.overlay { margin: 0; padding: 0 5px; position: absolute; top: 0; left: 0; background: rgba(0,0,0,.25);z-index: 1; max-width: 400px; line-height: 30px; text-align: center; color: #fff;}

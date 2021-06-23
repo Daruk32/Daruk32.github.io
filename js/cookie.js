@@ -5,10 +5,9 @@ function createCookie(name,value,days) {
 		var expires = "; expires="+date.toGMTString();
 	}
 	else var expires = "";
-	document.cookie = name+"="+value+expires+"; path=/";
-
-	console.log(value);
+	document.cookie = name+"="+value+expires+"; path=/"+'; sameSite=Strict;secure=TRUE;';
 }
+
 
 function readCookie(name) {
 	var nameEQ = name + "=";
@@ -20,6 +19,7 @@ function readCookie(name) {
 	}
 	return null;
 }
+
 
 function eraseCookie(name) {
 	createCookie(name,"",-1);
